@@ -1,0 +1,118 @@
+.main{
+    background-color: rgb(0, 0,25);
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(7,1fr);
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    "screen screen screen"
+    "plus . clear"
+    "divide multiply minus"
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    "dot zero equals";
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 80vw;
+  border-radius: 10%;
+
+
+}
+.main div{
+    background-color: greenyellow;
+    margin: 1vh;
+}
+
+.plus {
+     grid-area: plus;
+    
+}
+.minus { 
+    grid-area: minus;
+}
+.divide { 
+    grid-area: divide;
+}
+.multiply { 
+    grid-area: multiply; 
+}
+.clear { 
+    grid-area: clear; 
+}
+.screen{
+    grid-area: screen;
+}
+.one { 
+    grid-area: one; 
+}
+.two {
+     grid-area: two; 
+}
+.three {
+     grid-area: three;
+}
+.four {
+     grid-area: four;
+}
+.five {
+     grid-area: five; 
+}
+.six { 
+    grid-area: six;
+}
+.seven { 
+    grid-area: seven; 
+}
+.eight {
+     grid-area: eight;
+}
+.nine { 
+    grid-area: nine;
+}
+.zero {
+     grid-area: zero;
+}
+.equals{
+    grid-area: equals;
+}
+.dot{
+    grid-area: dot;
+}
+     .divide button,.dot button, .clear button,.eight button,.five button,.four button,.minus button,.multiply button,.nine button,.one button,.plus button,.seven button,.six button,.three button,.two button,.zero button,.equals button{
+     width: 9vw;
+     border-radius: 20%;
+     text-align: center;
+     background-color: greenyellow;
+     border: 0;
+     overflow: hidden;
+     
+}
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: green;
+}
+.divide,.dot, .clear ,.eight,.five,.four,.minus,.multiply,.nine,.one,.plus,.seven,.six,.three,.two,.zero,.equals{
+    width: 9vw;
+     border-radius: 20%;
+      
+}
+h1{
+    font-size: x-large;
+    font-weight: bold;
+   
+}
+@media screen and (max-width:530px) {
+   .main div{
+        margin: 40px;
+    }
+    .divide, .clear,.eight,.five,.four,.minus,.multiply,.nine,.one,.plus,.seven,.six,.three,.two,.zero,.equals{
+        width: 8vw;
+    }
+
+    
+}
